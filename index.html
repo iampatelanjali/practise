@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+for(let i=5; i>=1; i--){
+            for(let j=1; j<=i; j++){
+                document.write("*")
+            }
+            document.write("<BR>");
+        }
+
+
+
+        for(let i=1; i<=5; i++){
+        for(let j=1; j<=i; j++){
+            document.write("*");
+        }
+        document.write("<BR>");
+    }
+
+    // let n=5;
+    //     for(let i=1; i<=n; i++){
+    //     for(let j=1; j<=i; j++){
+    //       document.write("&nbsp")
+    //     }
+    //     for(let k=1; k<=n; k++){
+    //       document.write("*")
+    //     }
+    //     document.write("<br>")
+    //     }
+
+
+        let n=5;
+for(let i=1; i<=n; i++){
+for(let j=1; j<=n-i; j++){
+ document.write("&nbsp")
+}
+for(let k=1; k<=i; k++){
+ document.write("*")
+}
+document.write("<br>")
+}
+
+
+for(let i=5; i>=1; i--){
+            for(let j=1; j<i; j++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let k=5; k>=i; k--){
+                document.write("*");
+            }
+            document.write("<BR>");
+        }
+
+
+        for(let i=5; i>=1; i--){
+            for(let j=5; j>=i; j-- ){
+                document.write("&nbsp;")
+            }
+            for(let k=i; k>=1; k--){
+                document.write("* ");
+            }
+            document.write("<BR>");
+        }
+
+
+        
+
+    </script>
+</body>
+</html>
