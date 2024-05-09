@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function fibonacciSequence(terms) {
+    let sequence = [];
+    
+    // First two numbers of Fibonacci sequence
+    let num1 = 0;
+    let num2 = 1;
+
+    // If terms is 0, return an empty array
+    if (terms === 0) {
+        return sequence;
+    }
+
+    // Push the first two numbers into the sequence
+    sequence.push(num1);
+    if (terms > 1) {
+        sequence.push(num2);
+    }
+
+    // Generate the rest of the sequence
+    for (let i = 2; i < terms; i++) {
+        let nextNum = num1 + num2;
+        sequence.push(nextNum);
+        num1 = num2;
+        num2 = nextNum;
+    }
+
+    return sequence;
+}
+
+// Example usage:
+let numberOfTerms = 10;
+console.log("Fibonacci sequence with", numberOfTerms, "terms:", fibonacciSequence(numberOfTerms));
+
+
+
+
+
+    </script>
+</body>
+</html>

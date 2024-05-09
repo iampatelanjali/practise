@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function findSmallestNumber(arr) {
+    let smallest = arr[0]; // Assume the first element is the smallest
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+
+    return smallest;
+}
+
+// Example usage:
+let numbers = [10, 5, 20, 15, 30];
+console.log("The smallest number in the array is:", findSmallestNumber(numbers)); // Output: 5
+
+
+
+
+
+    </script>
+</body>
+</html>
